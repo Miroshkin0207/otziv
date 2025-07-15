@@ -1,0 +1,17 @@
+﻿body {
+    background-color: rgb(31, 31, 31);
+    color: white
+}
+h1 {
+    text-align: center
+}
+button {
+    background-color: black;
+    color: rgb(19, 65, 146)
+}
+#back {
+    font-size: 45px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
