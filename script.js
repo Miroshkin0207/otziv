@@ -12,6 +12,8 @@ readyFeedbacks = [
     "Идеальный аналог Телеграма, здесь есть всё то же и даже больше! Мне нравится. А 1-звёздочные отзывы - это всё накрутка недружественных стран.",
     "Превосходное приложение, идеально для общения и звонков! Особенно мне нравится безопасность!"
 ]
+let eval = Number(document.querySelector("#evaluation").innerHTML)
+let countEvals = 0
 const parent = document.querySelector("#grayRect")
 for (let i = 1; i <= 10; i++) {
 
@@ -34,4 +36,7 @@ for (let i = 1; i <= 10; i++) {
     parentForPair.appendChild(avatar)
     parentForPair.appendChild(nick)
     parent.appendChild(parentForPair)
+    countEvals++
+    eval = (eval + 5) / countEvals
+    document.querySelector("#evaluation").innerHTML = eval
 }
