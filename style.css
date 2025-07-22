@@ -38,12 +38,40 @@ h4 {
 
 #grayRect {
     background-color: rgb(53, 57, 64);
-    display: flex;
-    width: 750px;
-    height: 500px;
+    z-index: -1;
+    width: 725px;
     position: absolute;
     right: 0;
-    bottom: 0
+    top: 230px;
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.parentForPair {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.avatars {
+    width: 45px;
+    height: 45px;
+    border-radius: 55px
+}
+
+.nicks {
+    font-size: 30px;
+    position: relative;
+    left: 15px;
+    bottom: 25px
+}
+
+.comments {
+    position: relative;
+    left: 15px;
+    width: 700px;
+    padding: 0
 }
 
 #otsenka {
@@ -53,6 +81,6 @@ h4 {
 
 #otzivi {
     position: absolute;
-    top: 100px;
-    right: 550px
+    top: 125px;
+    right: 560px
 }
